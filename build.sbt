@@ -8,7 +8,7 @@ organization := "io.aecor"
 scalaVersion := "2.12.7"
 
 lazy val kindProjectorVersion = "0.9.7"
-lazy val aecorVersion = "0.18.0"
+lazy val aecorVersion = "0.19.1-SNAPSHOT"
 lazy val doobieVersion = "0.7.0-M3"
 lazy val scalaCheckVersion = "1.13.4"
 lazy val scalaTestVersion = "3.0.1"
@@ -20,7 +20,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "io.aecor" %% "core" % aecorVersion,
+  "io.aecor" %% "aecor-core" % aecorVersion,
   "org.tpolecat" %% "doobie-core" % doobieVersion,
   "org.tpolecat" %% "doobie-postgres" % doobieVersion,
   "org.scalacheck" %% "scalacheck" % scalaCheckVersion % Test,
